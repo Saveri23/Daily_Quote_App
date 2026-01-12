@@ -1,50 +1,44 @@
-# Welcome to your Expo app 👋
+#  Daily Quote App
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A clean and minimal mobile app that displays daily inspirational quotes,
+allows users to favorite quotes, share them, and persist data across sessions.
 
-## Get started
+---
 
-1. Install dependencies
+##  Features
+- Random quote generation (API-based)
+- Save favorite quotes
+- Share quotes via system share sheet
+- Persistent storage using AsyncStorage
+- Light & Dark mode support
+- Smooth UI animations
 
-   ```bash
-   npm install
-   ```
+---
 
-2. Start the app
+## 🛠 Tech Stack
+- React Native (Expo)
+- Quotable API
+- AsyncStorage
+- React Navigation
 
-   ```bash
-   npx expo start
-   ```
+---
 
-In the output, you'll find options to open the app in a
+##  AI Tools Used
+- ChatGPT – code generation, debugging, UI improvements
+- Figma Make / Stitch – UI design generation
+- AI-assisted iteration & refactoring
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+---
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+##  AI Workflow
+1. Generated initial boilerplate using AI
+2. Iterated on UI and UX based on visual feedback
+3. Used AI to debug AsyncStorage persistence
+4. Improved code readability and structure
 
-## Get a fresh project
+---
 
-When you're ready, run:
-
+## ▶️ Setup Instructions
 ```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+npm install
+npm start
