@@ -1,44 +1,132 @@
-#  Daily Quote App
+📱 Daily Quote App – AI-Assisted Mobile Application
+📌 Overview
 
-A clean and minimal mobile app that displays daily inspirational quotes,
-allows users to favorite quotes, share them, and persist data across sessions.
+This is a Daily Quote mobile application built using React Native & Expo.
+The app displays random quotes, allows users to save favorite quotes, share quotes using the system share sheet, and supports persistent storage.
 
----
+This project was built as part of a Mobile Application Developer assignment, with a strong focus on effective AI tool usage during design, development, and debugging.
 
-##  Features
-- Random quote generation (API-based)
-- Save favorite quotes
-- Share quotes via system share sheet
-- Persistent storage using AsyncStorage
-- Light & Dark mode support
-- Smooth UI animations
+✨ Features
 
----
+📖 Fetches and displays random quotes
 
-## 🛠 Tech Stack
-- React Native (Expo)
-- Quotable API
-- AsyncStorage
-- React Navigation
+❤️ Save favorite quotes
 
----
+📂 View favorites in a separate screen
 
-##  AI Tools Used
-- ChatGPT – code generation, debugging, UI improvements
-- Figma Make / Stitch – UI design generation
-- AI-assisted iteration & refactoring
+🔄 Persistent storage using AsyncStorage
 
----
+📤 Share quotes via system share sheet
 
-##  AI Workflow
-1. Generated initial boilerplate using AI
-2. Iterated on UI and UX based on visual feedback
-3. Used AI to debug AsyncStorage persistence
-4. Improved code readability and structure
+🌗 Light & Dark mode support
 
----
+💥 Crash-free and clean UI
 
-## ▶️ Setup Instructions
-```bash
+🛠️ Tech Stack
+
+Framework: React Native (Expo)
+
+Language: TypeScript / JavaScript
+
+Storage: AsyncStorage
+
+API: Quotable / ZenQuotes API
+
+Design: Figma Make
+
+AI Tools: ChatGPT (for code generation, debugging, workflow)
+
+ UI Design (Figma)
+
+The app UI was designed using Figma Make, focusing on a clean, minimal, and modern design.
+
+ Figma Design Link:
+https://www.figma.com/make/10sWYjZ76WOKbbQol1Aqmc/sa?t=5rZ3LPLucQCvQnxj-20&fullscreen=1
+(Includes Home Screen, Favorites Screen, Light Mode & Dark Mode designs)
+
+ AI-Assisted Development Workflow
+
+AI tools were used to:
+
+Generate initial project structure
+
+Create reusable components (QuoteCard, Screens)
+
+Integrate quote API
+
+Implement AsyncStorage persistence
+
+Debug runtime and logic issues
+
+Improve code readability and structure
+
+ AI Prompt Used:
+Build a React Native Daily Quote App with random quote fetching,
+favorite persistence using AsyncStorage, and share functionality.
+
+Iteration Process:
+
+Initial AI responses were refined by improving prompts
+
+Generic solutions were customized to fit the project structure
+
+AI was also used as a debugging assistant
+
+ Loom Walkthrough Video (Important)
+
+A 5-minute Loom video demonstrates:
+
+App demo (features & flow)
+
+Figma design process
+
+AI usage and workflow
+
+Code structure overview
+
+ Loom Video Link:
+ https://loom.com/share/your-loom-video-link
+
+ Getting Started (Setup Instructions)
+Prerequisites
+
+Node.js installed
+
+Expo CLI installed
+
+Android Studio (for emulator) or physical device
+
+Steps
+git clone https://github.com/Saveri23/daily-quote-app.git
+cd daily-quote-app
 npm install
-npm start
+npx expo start
+
+
+Open the app in Android Emulator or Expo Go app
+
+ Project Structure
+app/
+ | |-_layout.ysx
+ │   ├─ index.tsx
+ │   ├─ Favorites.tsx
+ ├─ components/
+ │   ├─ QuoteCard.tsx
+ ├─ utils/
+ │   ├─ storage.ts
+|-theme.ts
+ Future Improvements
+
+Offline caching
+
+Quote categories
+
+Animations & transitions
+
+Improved error handling
+
+ Author
+Saveri Gavvala
+
+Bujji
+Mobile Application Developer
