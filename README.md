@@ -97,7 +97,7 @@ Expo CLI installed
 Android Studio (for emulator) or physical device
 
 Steps
-git clone https://github.com/Saveri23/daily-quote-app.git
+https://github.com/Saveri23/Daily_Quote_App.git
 cd daily-quote-app
 npm install
 npx expo start
