@@ -85,8 +85,8 @@ AI usage and workflow
 Code structure overview
 
  Loom Video Link:
- https://loom.com/share/your-loom-video-link
 
+https://www.loom.com/share/63795f3ad108412dadcca3709ccb6dbf
  Getting Started (Setup Instructions)
 Prerequisites
 
@@ -130,3 +130,8 @@ Saveri Gavvala
 
 Bujji
 Mobile Application Developer
+screenshots:
+home:/../assests/home.png
+faviortes:/../assests/faviortes.png
+share:/../assests/share.png
+figma:/../assests/figma.png
