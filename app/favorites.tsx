@@ -1,36 +1,56 @@
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import { View, FlatList, Text, StyleSheet } from "react-native";
+import { useFocusEffect } from "expo-router";
 import { getFavorites } from "../utils/storage";
-import { getSystemTheme } from "../theme"; // ✅ CORRECT
+import { getSystemTheme } from "../theme";
 
 type Quote = { content: string; author: string };
 
 export default function FavoritesScreen() {
   const [favorites, setFavorites] = useState<Quote[]>([]);
-  const theme = getSystemTheme(); // ✅ CORRECT
+  const theme = getSystemTheme();
 
-  useEffect(() => {
-    getFavorites().then(setFavorites);
-  }, []);
-
-  return (
-    <View style={[styles.container, { backgroundColor: theme.background }]}>
-      <FlatList
-        data={favorites}
-        keyExtractor={(_, i) => i.toString()}
-        renderItem={({ item }) => (
-          <View style={[styles.card, { backgroundColor: theme.card }]}>
-            <Text style={[styles.quote, { color: theme.text }]}>
-              "{item.content}"
-            </Text>
-            <Text style={[styles.author, { color: theme.text }]}>
-              — {item.author}
-            </Text>
-          </View>
-        )}
-      />
-    </View>
+  useFocusEffect(
+    React.useCallback(() => {
+      getFavorites().then(setFavorites);
+    }, [])
   );
+
+ return (
+  <View style={[styles.container, { backgroundColor: theme.background }]}>
+
+    {/* ✅ Empty State */}
+    {favorites.length === 0 && (
+      <Text
+        style={{
+          color: theme.text,
+          textAlign: "center",
+          marginTop: 40,
+          fontSize: 16,
+        }}
+      >
+        No favorites yet ❤️
+      </Text>
+    )}
+
+    {/* ✅ Favorites List */}
+    <FlatList
+      data={favorites}
+      keyExtractor={(_, i) => i.toString()}
+      renderItem={({ item }) => (
+        <View style={[styles.card, { backgroundColor: theme.card }]}>
+          <Text style={[styles.quote, { color: theme.text }]}>
+            "{item.content}"
+          </Text>
+          <Text style={[styles.author, { color: theme.text }]}>
+            — {item.author}
+          </Text>
+        </View>
+      )}
+    />
+  </View>
+);
+
 }
 
 const styles = StyleSheet.create({

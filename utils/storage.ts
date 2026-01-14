@@ -6,11 +6,18 @@ type Quote = {
 };
 
 const KEY = "FAVORITES";
-
 export const saveFavorite = async (quote: Quote) => {
   const existing = await getFavorites();
-  await AsyncStorage.setItem(KEY, JSON.stringify([...existing, quote]));
+
+  const alreadyExists = existing.some(
+    q => q.content === quote.content
+  );
+
+  if (!alreadyExists) {
+    await AsyncStorage.setItem(KEY, JSON.stringify([...existing, quote]));
+  }
 };
+
 
 export const getFavorites = async (): Promise<Quote[]> => {
   const data = await AsyncStorage.getItem(KEY);
