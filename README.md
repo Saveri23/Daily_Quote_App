@@ -86,7 +86,7 @@ Code structure overview
 
  Loom Video Link:
 
-https://www.loom.com/share/63795f3ad108412dadcca3709ccb6dbf
+https://www.loom.com/share/30dfa2047e0645f5aeb57876ee9f73d6
  Getting Started (Setup Instructions)
 Prerequisites
 
